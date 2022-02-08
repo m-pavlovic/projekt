@@ -1,3 +1,6 @@
+{% extends 'base.html' %} {% block content %}
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,8 +8,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>zadarska polja</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon.png">
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static',filename='img/favicon.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='bootstrap/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ABeeZee">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alatsi">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amiri&amp;display=swap">
@@ -16,38 +19,38 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Spectral:300,300i,400,400i">
-    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
-    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
-    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
-    <link rel="stylesheet" href="assets/css/-Identity-Page-BS4-.css">
-    <link rel="stylesheet" href="assets/css/accordion-faq-list.css">
-    <link rel="stylesheet" href="assets/css/Article-List.css">
-    <link rel="stylesheet" href="assets/css/Block-Responsive-Item-List.css">
-    <link rel="stylesheet" href="assets/css/blog-1.css">
-    <link rel="stylesheet" href="assets/css/blog.css">
-    <link rel="stylesheet" href="assets/css/Contact-Form-Clean.css">
-    <link rel="stylesheet" href="assets/css/FAQ-Frequentlly-Asked-Questions-1.css">
-    <link rel="stylesheet" href="assets/css/FAQ-Frequentlly-Asked-Questions.css">
-    <link rel="stylesheet" href="assets/css/Footer-Dark.css">
-    <link rel="stylesheet" href="assets/css/Highlight-Clean.css">
+    <link rel="stylesheet" href="{{ url_for('static',filename='fonts/fontawesome-all.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='fonts/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='fonts/ionicons.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='fonts/fontawesome5-overrides.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/-Identity-Page-BS4-.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/accordion-faq-list.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/Article-List.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/Block-Responsive-Item-List.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/blog-1.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/blog.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/Contact-Form-Clean.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/FAQ-Frequentlly-Asked-Questions-1.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/FAQ-Frequentlly-Asked-Questions.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/Footer-Dark.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/Highlight-Clean.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.css">
-    <link rel="stylesheet" href="assets/css/Map-Clean.css">
-    <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
-    <link rel="stylesheet" href="assets/css/Navigation-with-Search.css">
-    <link rel="stylesheet" href="assets/css/Newsletter-Subscription-Form.css">
-    <link rel="stylesheet" href="assets/css/Parallax-Effect-Template-Landing-Page-Bootstrap-4-1.css">
-    <link rel="stylesheet" href="assets/css/Parallax-Effect-Template-Landing-Page-Bootstrap-4.css">
-    <link rel="stylesheet" href="assets/css/Pretty-Search-Form.css">
-    <link rel="stylesheet" href="assets/css/Registration-Form-with-Photo.css">
-    <link rel="stylesheet" href="assets/css/responsive-blog-card-slider.css">
-    <link rel="stylesheet" href="assets/css/SBWP-Search-Bar-With-Parameters.css">
-    <link rel="stylesheet" href="assets/css/Search-Input-responsive.css">
-    <link rel="stylesheet" href="assets/css/Simple-Slider.css">
-    <link rel="stylesheet" href="assets/css/styles-1.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/Map-Clean.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/Navigation-Clean.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/Navigation-with-Search.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/Newsletter-Subscription-Form.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/Parallax-Effect-Template-Landing-Page-Bootstrap-4-1.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/Parallax-Effect-Template-Landing-Page-Bootstrap-4.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/Pretty-Search-Form.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/Registration-Form-with-Photo.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/responsive-blog-card-slider.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/SBWP-Search-Bar-With-Parameters.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/Search-Input-responsive.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/Simple-Slider.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/styles-1.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/styles.css') }}">
 </head>
 
 <body style="background: linear-gradient(90deg, #175f3e 0%, #618c1c 84%), var(--bs-green);">
@@ -203,16 +206,19 @@
             <p class="copyright">Zadarska polja © 2021</p>
         </div>
     </footer>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/bs-init.js"></script>
+    <script src="{{ url_for('static',filename='bootstrap/js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/bs-init.js') }}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script src="assets/js/-Identity-Page-BS4-.js"></script>
+    <script src="{{ url_for('static',filename='js/-Identity-Page-BS4-.js') }}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.js"></script>
-    <script src="assets/js/responsive-blog-card-slider-1.js"></script>
-    <script src="assets/js/responsive-blog-card-slider.js"></script>
-    <script src="assets/js/SBWP-Search-Bar-With-Parameters.js"></script>
-    <script src="assets/js/scripts.js"></script>
-    <script src="assets/js/Simple-Slider.js"></script>
+    <script src="{{ url_for('static',filename='js/responsive-blog-card-slider-1.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/responsive-blog-card-slider.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/SBWP-Search-Bar-With-Parameters.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/scripts.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/Simple-Slider.js') }}"></script>
 </body>
 
 </html>
+
+
+{% endblock %}
