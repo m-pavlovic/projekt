@@ -26,9 +26,9 @@ def linkovi():
 def obrazac():
     return render_template('obrazac.html')
 
-@app.route('/opgeovi')
-def opgeovi():
-    return render_template('opgeovi.html')
+@app.route('/opgovi')
+def opgovi():
+    return render_template('opgovi.html')
 
 
 

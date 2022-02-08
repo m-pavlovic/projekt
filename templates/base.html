@@ -53,13 +53,19 @@
 <body style="background: linear-gradient(90deg, #175f3e 0%, #618c1c 84%), var(--bs-green);">
     <nav class="navbar navbar-light navbar-expand-lg sticky-top navigation-clean" style="background: #87831e;">
         <div class="container"><a class="navbar-brand" data-bss-hover-animate="pulse" href="{{ url_for('index') }}" style="font-family: Metamorphous, serif;background: transparent;color: var(--bs-gray-100);">zadarska polja</a><button data-bs-toggle="collapse" class="navbar-toggler"
-                data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                data-bs-target="#navcol-1">
+                <span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse d-lg-flex align-self-center" id="navcol-1" style="padding-left: 0px;">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"></li>
-                    <li class="nav-item"></li>
-                    <li class="nav-item"></li>
-                    <li class="nav-item"></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('opgovi') }}">OPG-ovi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('blog') }}">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('faq') }}">FAQ</a>
+                    </li>
                 </ul>
             </div>
         </div>
